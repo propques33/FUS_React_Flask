@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Banner from '../components/Commercial Office Leasing & Sales/Banner'
 import CommercialListing from '../components/Commercial Office Leasing & Sales/CommercialListing'
 import LocationFilter from '../components/Commercial Office Leasing & Sales/LocationFilter'
@@ -26,7 +26,9 @@ import BrandMarquee from '../components/BrandMarquee.jsx'
 import FeaturedManagedOffices from '../components/FeaturedManagedOffices.jsx'
 import ManagedOfficeSection from '../components/ManagedOfficeSection.jsx'
 
-const Home2 = (setFilters ) => {
+const Home2 = (setFilters) => {
+  const [backendStatus, setBackendStatus] = useState("");
+
   useEffect(() => {
     // Ensure scrolling to the top of the document when the component is mounted
     window.scrollTo({
@@ -39,10 +41,21 @@ const Home2 = (setFilters ) => {
       top: 0,
       behavior: "smooth",
     });
-  }, []);
+  // 👇 Call Flask backend API
+  fetch(`${import.meta.env.VITE_API_URL}/`)
+    .then(res => res.json())
+    .then(data => {
+      console.log("Flask Response:", data); // For now just log
+      setBackendStatus(data.message);
+    })
+    .catch(err => console.error("Backend Error:", err));
+}, []);
 
   return (
     <div className='overflow-hidden'>
+      <p className="text-sm text-green-600 text-center mt-2">
+        {backendStatus && `Backend says: ${backendStatus}`}
+      </p>
       <Banner setFilters={setFilters}  />
       <FindSpaceSteps />
 
