@@ -16,7 +16,7 @@ import secrets
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})   # 👈 Add this line
+CORS(app)   # 👈 Add this line
 
 app.secret_key = os.environ.get('SECRET_KEY')
 
@@ -104,7 +104,8 @@ if __name__ == '__main__':
     debug_mode = os.environ.get('FLASK_DEBUG', 'False').lower() in ['true', '1']
     
     # Use the PORT environment variable if available, default to 5000
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 5001))
+    # port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=False)
 
 

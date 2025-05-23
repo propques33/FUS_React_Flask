@@ -38,18 +38,18 @@ const spaceData = {
       image: ws5,
     },
   ],
-  "Private Office": [
-    {
-      title: "Executive Office",
-      description: "Premium private office tailored for leaders and founders.",
-      image: w2,
-    },
-    {
-      title: "Startup Suite",
-      description: "A compact office space, perfect for early-stage teams.",
-      image: ws5,
-    },
-  ],
+  // "Private Office": [
+  //   {
+  //     title: "Executive Office",
+  //     description: "Premium private office tailored for leaders and founders.",
+  //     image: w2,
+  //   },
+  //   {
+  //     title: "Startup Suite",
+  //     description: "A compact office space, perfect for early-stage teams.",
+  //     image: ws5,
+  //   },
+  // ],
   "Managed Office": [
     {
       title: "Business Address",
@@ -138,17 +138,22 @@ const TrendingSpaces = () => {
                 alt={space.title}
                 className="w-full h-56 object-cover"
               />
-              <div className="p-4 text-left flex flex-col gap-1">
+              <div className="p-4 text-left flex flex-col gap-">
                 <h3 className="text-lg font-semibold text-gray-800">
                   {space.title}, Cubispace
                 </h3>
                 <p className="text-sm text-gray-500">Delhi</p>
-                <div className="flex items-center gap-2 mt-2">
+                <div className="  items-center gap-2 mt-1">
                   <p className="text-sm text-gray-500">Starting From</p>
                   <p className="text-xl font-semibold text-blue-500">
                     ₹500 <span className="text-xs text-gray-500 font-normal">/desk/hour</span>
                   </p>
                 </div>
+                <button className="bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-full mt-4 transition">
+                  <p className="text-sm font-   ">
+                    Book Now
+                  </p>
+                </button>
               </div>
             </div>
           ))}

@@ -6,7 +6,7 @@ import {
   DollarSign,
   Briefcase,
 } from "lucide-react";
-import cc1 from '../assets/cc1.png'
+import cc1 from '../assets/fuslogo.png'
 
 const stats = [
   { value: "+15", label: "Centers" },
@@ -56,7 +56,7 @@ export default function CoworkingOverview() {
           <img
             src={cc1}
             alt="Coworking Space"
-            className="rounded-xl shadow-md w-full h-64 object-cover"
+            className="  w-full h-64 object-cover"
           />
 
           <h1 className="md:text-4xl text-2xl font-medium  leading-snug">

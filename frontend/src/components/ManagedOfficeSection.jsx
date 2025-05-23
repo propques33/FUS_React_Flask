@@ -1,6 +1,7 @@
 import React from "react";
 import managedImg from "../assets/cc10.png"; // Replace with your image
 import { Link } from "react-router-dom";
+import mbl from '../assets/mbl.png'; // Replace with your image
 
 const ManagedOfficeSection = () => {
   return (
@@ -8,7 +9,7 @@ const ManagedOfficeSection = () => {
       {/* Image */}
       <div className="w-full md:w-1/2">
         <img
-          src={managedImg}
+          src={mbl}
           alt="Managed Office"
           className="rounded-br-[80px] object-cover w-full "
         />
