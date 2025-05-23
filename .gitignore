@@ -1,0 +1,19 @@
+# Dependency lock file (optional if you want consistent builds)
+package-lock.json
+
+# macOS system files
+.DS_Store
+
+# Environment files
+.env
+
+# Node modules
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code settings (optional)
+.vscode/
