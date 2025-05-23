@@ -8,9 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview", 
-    "backend": "cd ../backend && source venv/bin/activate && python main.py",      
-    "backend-linux": "cd ../backend && source ../venv/bin/activate && python main.py", 
-    "start-all": "concurrently \"npm run dev\" \"npm run backend\""  
+    "backend": "cd ../backend && call venv\\Scripts\\python.exe main.py",
+    "start-all": "concurrently \"npm run dev\" \"npm run backend\""
   },
   "dependencies": {
     "@headlessui/react": "^2.2.4",

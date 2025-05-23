@@ -25,9 +25,9 @@ import WhyChooseFindUrSpace from '../components/WhyChooseFindUrSpace.jsx'
 import BrandMarquee from '../components/BrandMarquee.jsx'
 import FeaturedManagedOffices from '../components/FeaturedManagedOffices.jsx'
 import ManagedOfficeSection from '../components/ManagedOfficeSection.jsx'
-import { getBackendStatus } from '../utils/api'; // ✅ Import from api.js
+import { getBackendStatus } from '../utils/api';
 
-const Home2 = (setFilters) => {
+const Home = (setFilters) => {
   const [backendStatus, setBackendStatus] = useState("");
 
   useEffect(() => {
@@ -66,7 +66,7 @@ const Home2 = (setFilters) => {
       <LocationFilter />
       <FeaturedManagedOffices />
 
-      <ViewAllPropertiesButton />
+      {/* <ViewAllPropertiesButton /> */}
 
 
       {/* <InspireSection /> */}
@@ -95,4 +95,4 @@ const Home2 = (setFilters) => {
   )
 }
 
-export default Home2
+export default Home

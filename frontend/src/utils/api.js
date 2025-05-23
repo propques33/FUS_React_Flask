@@ -6,3 +6,15 @@ export const getBackendStatus = async () => {
   const data = await res.json();
   return data;
 };
+
+export const getCities = async () => {
+    const res = await fetch(`${API_BASE_URL}/get_locations`);
+    const data = await res.json();
+    return data.locations;
+};
+  
+export const getBlogs = async () => {
+    const res = await fetch(`${API_BASE_URL}/api/blogs`);
+    const data = await res.json();
+    return data.blogs || [];
+  };

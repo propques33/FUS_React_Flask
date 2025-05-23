@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState  } from "react";
 import cc3 from "../assets/cc3.png";
 import cc4 from "../assets/cc4.png";
 import cc7 from "../assets/cc7.png";
@@ -7,9 +7,11 @@ import ws5 from "../assets/ws5.jpg";
 import ws7 from "../assets/ws7.jpg";
 import w2 from "../assets/w2.jpg";
 import w4 from "../assets/w4.jpg";
+import { getCities } from "../utils/api";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import defaultImage from "../assets/adarsh.png";
 
-const cities = [
+const cityData  = [
   { name: "Gurugram", subtitle: "Millennium City", image: w4, workspaces: 385 },
   { name: "Hyderabad", subtitle: "City of Pearls", image: w2, workspaces: 284 },
   {
@@ -36,7 +38,25 @@ const cities = [
 ];
 
 const TopCoworkingCities = () => {
+  const [cities, setCities] = useState([]);
   const scrollRef = useRef(null);
+
+  useEffect(() => {
+    getCities()
+      .then((data) => {
+        const enriched = data.map((city) => {
+          const info = cityData[city] || {};
+          return {
+            name: city,
+            subtitle: info.subtitle || "Explore Spaces",
+            image: info.image || defaultImage,
+            workspaces: info.workspaces || 99, // fallback count
+          };
+        });
+        setCities(enriched);
+      })
+      .catch(console.error);
+  }, []);
 
   const scroll = (direction) => {
     if (scrollRef.current) {
