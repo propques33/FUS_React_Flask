@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState  } from "react";
 import cc3 from "../assets/cc3.png";
 import cc4 from "../assets/cc4.png";
-import cc7 from "../assets/cc7.png";
+import ws7 from "../assets/ws7.jpg";
 import cc10 from "../assets/cc10.png";
 import ws5 from "../assets/ws5.jpg";
-import ws7 from "../assets/ws7.jpg";
+import ws6 from "../assets/ws6.jpg";
 import w2 from "../assets/w2.jpg";
 import w4 from "../assets/w4.jpg";
 import { getCities } from "../utils/api";
@@ -20,13 +20,13 @@ const cityData  = [
     image: cc4,
     workspaces: 830,
   },
-  { name: "Mumbai", subtitle: "City of Dreams", image: ws7, workspaces: 263 },
-  {
-    name: "Pune",
-    subtitle: "Queen of the Deccan",
-    image: cc7,
-    workspaces: 377,
-  },
+  { name: "Mumbai", subtitle: "City of Dreams", image: ws6, workspaces: 263 },
+  // {
+  //   name: "Pune",
+  //   subtitle: "Queen of the Deccan",
+  //   image: ws7,
+  //   workspaces: 377,
+  // },
   {
     name: "Delhi",
     subtitle: "The Nation's Capital",
@@ -81,8 +81,7 @@ const TopCoworkingCities = () => {
         <h2 className=" text-2xl md:text-4xl font-medium relative z-10">
           Top Coworking Cities In <span className="text-blue-600">India</span>
         </h2>
-        <div className="absolute -top-4 -left-6 w-14 h-14 bg-yellow-300/50 rounded-full z-0"></div>
-
+ 
         <div className="h-[2px] w-24 bg-blue-600 mx-auto mt-3 rounded" />
       </div>
 

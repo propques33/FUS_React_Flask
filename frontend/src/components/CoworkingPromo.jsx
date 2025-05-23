@@ -49,17 +49,18 @@ const CoworkingPromo = () => {
           {/* Headline */}
           <div>
             <h2 className="text-2xl md:text-4xl font-semibold leading-snug">
-              Find Your Ideal Spaces for{" "}
-              <span className="text-yellow-300">Coworking Locations</span>
+              Discover The   {" "} <br />
+              <span className="text-yellow-300">Best Coworking Locations </span> &
               <br className="hidden md:block" />
-              Office Rentals Simplified
+              Office Rental In India
             </h2>
             <p className="mt-4 text-lg">
               India’s{" "}
               <span className="font-semibold underline underline-offset-2">
-                #1 online platform
+                #1 Most Trusted  
               </span>{" "}
-              for Coworking Spaces
+             Coworking Space Discovery Platform
+
             </p>
           </div>
 

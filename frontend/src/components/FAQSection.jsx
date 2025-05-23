@@ -3,27 +3,31 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "Who uses co-working spaces?",
+    question:
+      "What types of coworking and office spaces can I find on FindUrSpace?",
     answer:
-      "Co-working spaces are popular among freelancers, startups, entrepreneurs, and even employees from larger companies who require flexible day passes, hourly rentals, monthly plans, and customized enterprise with a collaborative environment." },
-  {
-    question: " What types of office spaces can I find on Propques Space?",
-    answer:
-      "At Propques, you can discover coworking spaces, private office rentals, meeting rooms, day passes, and enterprise office solutions. Whether you need a short-term desk or a full-time office, we’ve got you covered.",
+      "FindUrSpace offers a wide range of flexible workspace options, including coworking desks, private offices, managed office spaces, meeting rooms, and conference halls across major Indian cities.",
   },
   {
-    question: "Can I find coworking spaces near me on with the help of Propques Space?",
+    question: "How do I book a coworking space or office through FindUrSpace?",
     answer:
-      " Yes! Propques offers location-based searches. Whether you're looking for coworking spaces in Lucknow, Pune,Mumbai, Bangalore, or any major city, you can easily find options near you.",},
-  {
-    question: "Why should I choose Propques for my office space needs?",
-    answer:
-      " We make it easy to discover, compare, and book the best office spaces at competitive rates. Our curated listings, personalized support, and extensive network ensure you find the right workspace without the hassle.",
+      "Simply browse available spaces by city or workspace type, select your preferred option, and book instantly online with transparent pricing—no brokerage fees involved.",
   },
   {
-    question: "How co-Working spaces promote productivity?",
+    question:
+      "Can I rent office space for short-term or flexible lease durations?",
     answer:
-      " Co-working spaces boost productivity by offering convenient locations that reduce long commutes and save time. They provide flexible access, professional amenities, and a structured environment, making it easier to focus and work efficiently compared to rigid office setups.",
+      " Yes, FindUrSpace provides flexible lease terms including hourly, daily, monthly, and long-term rentals, tailored to startups, freelancers, and enterprises.",
+  },
+  {
+    question: "Are the listed workspaces fully furnished and ready to use?",
+    answer:
+      "All the spaces on FindUrSpace are fully furnished and equipped with essential amenities like high-speed internet, meeting rooms, and 24/7 support to ensure a seamless work experience.",
+  },
+  {
+    question: "Which cities does FindUrSpace cover for coworking and office rentals?",
+    answer:
+      "FindUrSpace covers major metros like Bangalore, Mumbai, Delhi, Hyderabad, and expanding Tier-2 cities, including Jaipur, Pune, Indore & Lucknow.",
   },
 ];
 
@@ -41,7 +45,8 @@ export default function FAQSection() {
         <div>
           <h2 className="text-2xl  mb-4">Frequently Asked Questions</h2>
           <p className="text-gray-600 md:text-sm text-xs ">
-            Have questions? We’ve got answers to help you choose the right coworking experience.
+            Have questions? We’ve got answers to help you choose the right
+            coworking experience.
           </p>
         </div>
 

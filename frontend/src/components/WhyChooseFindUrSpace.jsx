@@ -72,8 +72,9 @@ const WhyChooseFindUrSpace = () => {
         </h2>
 
         <p className="text-gray-600 max-w-3xl mx-auto mb-10 text-xs md:text-base">
-          Discover a better, smarter way to find coworking spaces tailored to
-          your work style, location, and budget—without brokerage.
+   Find coworking spaces that fit your needs—by location, style, or budget. No brokers, just seamless booking.
+
+
         </p>
       </div>
 

@@ -36,8 +36,7 @@ const PropertyList = () => {
       <div className="relative mb-10 text-center">
         <h1 className="text-2xl md:text-4xl font-medium text-gray-800 relative z-10 inline-block">
         Featured Managed Office Spaces
-        <span className="absolute -top-3 -left-5 md:-top-4 md:-left-6 w-12 h-12 md:w-14 md:h-14 bg-yellow-300/40 rounded-full -z-0"></span>
-        </h1>
+         </h1>
         <div className="h-1 w-24 bg-blue-600 mx-auto mt-4 rounded"></div>
       </div>
 

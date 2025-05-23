@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview", 
-    "backend": "cd ../backend && call venv\\Scripts\\python.exe main.py",
+"backend": "cd ../backend && ./venv/bin/python3 main.py",
     "start-all": "concurrently \"npm run dev\" \"npm run backend\""
   },
   "dependencies": {

@@ -65,11 +65,10 @@ export default function CoworkingOverview() {
               India’s Best Managed Workspaces
             </span>
           </h1>
-          <p className="text-gray-600 text-sm md:text-base">
-            Whether you're a freelancer, startup, or enterprise team, discover
-            vibrant managed workspaces built for productivity and connection.
+          <p className="text-gray-600 text-sm md:text-sm">
+           Discover flexible, fully managed office solutions designed for freelancers, startups, and enterprises. Enjoy plug-and-play setups, ergonomic spaces, and 24/7 support across major Indian cities.
           </p>
-          <div className="grid grid-cols-3 gap-4 text-center">
+          <div className="grid grid-cols-3 gap-4 text-center mt-4">
             {stats.map((stat, index) => (
               <div key={index}>
                 <p className="md:text-3xl text-xl font-medium text-blue-500">{stat.value}</p>

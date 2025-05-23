@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import w4 from "../assets/w4.jpg";
+import w4 from "../assets/cc4.webp";
 import w2 from "../assets/w2.jpg";
 import ws5 from "../assets/ws5.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -8,48 +8,27 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const spaceData = {
   "Coworking Space": [
     {
-      title: "Meeting rooms",
-      description: "Book on an hourly basis—freedom to collaborate on your terms.",
-      image: w4,
+      title: "Meeting Room in Cubispace",
+      description: "Book a meeting room for your next big idea.",
+      location: "Lucknow",
+       image: w4,
     },
     {
-      title: "Day Pass",
+      title: "Day Pass in Worqspot",
+
       description: "Book for a Day—flexibility redefined for your dynamic work needs.",
+      location: "Vashi, Navi Mumbai",
       image: w2,
     },
     {
-      title: "Private Cabin",
+      title: "Private Cabin in Workdesq",
       description: "A perfect blend of privacy and productivity for teams of any size.",
+      location: "Indore",
       image: ws5,
     },
-    {
-      title: "Meeting rooms",
-      description: "Book on an hourly basis—freedom to collaborate on your terms.",
-      image: w4,
-    },
-    {
-      title: "Day Pass",
-      description: "Book for a Day—flexibility redefined for your dynamic work needs.",
-      image: w2,
-    },
-    {
-      title: "Private Cabin",
-      description: "A perfect blend of privacy and productivity for teams of any size.",
-      image: ws5,
-    },
+     
   ],
-  // "Private Office": [
-  //   {
-  //     title: "Executive Office",
-  //     description: "Premium private office tailored for leaders and founders.",
-  //     image: w2,
-  //   },
-  //   {
-  //     title: "Startup Suite",
-  //     description: "A compact office space, perfect for early-stage teams.",
-  //     image: ws5,
-  //   },
-  // ],
+
   "Managed Office": [
     {
       title: "Business Address",
@@ -77,16 +56,16 @@ const TrendingSpaces = () => {
   return (
     <section className="pb-16 max-w-7xl mx-auto px-4 md:px-0 bg-gradient-to-b   text-center">
       {/* Heading */}
-      <h2 className="text-2xl md:text-4xl font-medium mb-4 relative inline-block">
+      <h2 className="text-2xl md:text-4xl font-medium mb-2 relative inline-block">
         <span className="px-2 py-1 rounded-full text-black relative z-10">
           Featured
-          <span className="absolute md:h-16 h-12 md:w-16 w-12 bg-yellow-300/50 rounded-full top-0 -left-4 -z-10"></span>
-        </span>{" "}
+         </span>{" "}
         Workspaces
       </h2>
 
-      <p className="text-gray-600 max-w-2xl mx-auto md:mt-2 mt-0 text-xs md:text-base">
-        Explore the most popular workspaces users love. Book what fits your workflow best.
+      <p className="text-gray-600 max-w-2xl mx-auto  mt-0 text-xs md:text-base">
+Browse and book Top-Rated Coworking Spaces Near You. Perfect for freelancers, startups, and teams alike
+
       </p>
       <div className="h-[2px] w-32 bg-blue-600 mx-auto my-4 rounded" />
 
@@ -139,12 +118,12 @@ const TrendingSpaces = () => {
                 className="w-full h-56 object-cover"
               />
               <div className="p-4 text-left flex flex-col gap-">
-                <h3 className="text-lg font-semibold text-gray-800">
-                  {space.title}, Cubispace
+                <h3 className="text-lg font-medium text-gray-800">
+                  {space.title}
                 </h3>
-                <p className="text-sm text-gray-500">Delhi</p>
+                <p className="text-  text-gray-500  flex inline-block">{space.location}</p>
                 <div className="  items-center gap-2 mt-1">
-                  <p className="text-sm text-gray-500">Starting From</p>
+                  <p className="text-xs mt-2 text-gray-500">Starting From</p>
                   <p className="text-xl font-semibold text-blue-500">
                     ₹500 <span className="text-xs text-gray-500 font-normal">/desk/hour</span>
                   </p>
