@@ -3,7 +3,11 @@ import React from "react";
 const ResultsBlogCard = ({ image, category, title, excerpt, author, link, readTime = 3 }) => {
 // Trim description to ~140 characters
 const trimmedExcerpt =
-  excerpt?.replace(/<[^>]+>/g, "").slice(0, 140).trim() + "...";
+  excerpt?.replace(/<[^>]+>/g, "").slice(0, 70).trim() + "...";
+
+
+const trimmedTitle =
+  title?.replace(/<[^>]+>/g, "").slice(0, 60).trim() + "...";
   
   return (
     <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200 group">
@@ -23,14 +27,16 @@ const trimmedExcerpt =
 
         <h3 className="text-lg font-bold text-gray-900 leading-snug mb-2 hover:text-blue-700 transition-colors">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            {title}
+            <p className="font-medium text-gray-900 hover:text-blue-700 ">
+              {trimmedTitle}
+            </p>
           </a>
         </h3>
 
         <p className="text-sm text-gray-600">{trimmedExcerpt}</p>
 
       </div>
-        <div className="bg-blue-600 text-white text-center rounded-full py-2  w-[90%] mx-auto mb-2">Read More →</div>
+        <div className="bg-blue-600 text-white text-center rounded-full py-2  w-[90%] mx-auto m  mb-6">Read More →</div>
 
     </div>
   );

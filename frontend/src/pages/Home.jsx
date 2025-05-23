@@ -53,6 +53,7 @@ const Home = (setFilters) => {
       <FindSpaceSteps />
 
       <TrendingSpaces />
+      
 
       <TopCoworkingCities />
       <WhyChooseFindUrSpace />

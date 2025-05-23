@@ -60,11 +60,11 @@ const TrendingSpaces = () => {
         <span className="px-2 py-1 rounded-full text-black relative z-10">
           Featured
          </span>{" "}
-        Workspaces
+        Coworking Spaces
       </h2>
 
       <p className="text-gray-600 max-w-2xl mx-auto  mt-0 text-xs md:text-base">
-Browse and book Top-Rated Coworking Spaces Near You. Perfect for freelancers, startups, and teams alike
+Browse and book Top-Rated Coworking Spaces Near You. Perfect for freelancers, startups, and teams a like.
 
       </p>
       <div className="h-[2px] w-32 bg-blue-600 mx-auto my-4 rounded" />
@@ -110,12 +110,12 @@ Browse and book Top-Rated Coworking Spaces Near You. Perfect for freelancers, st
           {spaceData[selectedCategory].map((space, idx) => (
             <div
               key={idx}
-              className="min-w-[300px] max-w-[300px] flex-shrink-0 rounded-xl overflow-hidden shadow bg-white  transition border border-gray-200"
+              className="min-w-[300px]  max-w-[300px] flex-shrink-0 rounded-xl overflow-hidden hover:shadow transition-all ease-in-out bg-white    border border-gray-200"
             >
               <img
                 src={space.image}
                 alt={space.title}
-                className="w-full h-56 object-cover"
+                className="w-full h-56 object-cover hover:scale-105 transition-transform duration-500"
               />
               <div className="p-4 text-left flex flex-col gap-">
                 <h3 className="text-lg font-medium text-gray-800">
@@ -128,7 +128,7 @@ Browse and book Top-Rated Coworking Spaces Near You. Perfect for freelancers, st
                     ₹500 <span className="text-xs text-gray-500 font-normal">/desk/hour</span>
                   </p>
                 </div>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-full mt-4 transition">
+                <button className="bg-blue-500 hover:bg-blue-600 cursor-pointer text-white text-sm font-medium px-4 py-2 rounded-full mt-4 transition">
                   <p className="text-sm font-   ">
                     Book Now
                   </p>

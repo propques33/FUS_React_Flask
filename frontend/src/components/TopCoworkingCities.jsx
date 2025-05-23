@@ -81,6 +81,10 @@ const TopCoworkingCities = () => {
         <h2 className=" text-2xl md:text-4xl font-medium relative z-10">
           Top Coworking Cities In <span className="text-blue-600">India</span>
         </h2>
+
+         <p className="text-gray-600 max-w-2xl mx-auto  mt-2 text-xs md:text-base">
+Work from India’s Most In-Demand Coworking Locations
+      </p>
  
         <div className="h-[2px] w-24 bg-blue-600 mx-auto mt-3 rounded" />
       </div>
